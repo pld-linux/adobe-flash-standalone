@@ -1,6 +1,6 @@
 %define		ver_major	9
 %define		ver_minor	0
-%define		ver_patch	48
+%define		ver_patch	115
 %define		ver_serial	0
 %define		rel 1
 Summary:	Standalone Flash player
@@ -11,7 +11,7 @@ Release:	%{rel}%{?with_license_agreement:wla}
 License:	Free to use, non-distributable
 Group:		X11/Applications/Multimedia
 Source0:	http://download.macromedia.com/pub/flashplayer/updaters/9/flash_player_9_linux_dev.tar.gz
-# NoSource0-md5:	cd0ca45c56f81f94e806125d39374c07
+# NoSource0-md5:	903b77cb674df3592dc779137f2cd365
 URL:		http://www.adobe.com/products/flashplayer/
 # apparently dlopened by player
 Requires:	libasound.so.2
