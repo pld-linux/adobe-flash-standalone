@@ -1,7 +1,7 @@
-%define		ver_major	9
+%define		ver_major	10
 %define		ver_minor	0
-%define		ver_patch	115
-%define		ver_serial	0
+%define		ver_patch	15
+%define		ver_serial	3
 %define		rel 1
 Summary:	Standalone Flash player
 Summary(pl.UTF-8):	Odtwarzacz Flash
@@ -10,18 +10,19 @@ Version:	%{ver_major}.%{ver_minor}.%{ver_patch}.%{ver_serial}
 Release:	%{rel}%{?with_license_agreement:wla}
 License:	Free to use, non-distributable
 Group:		X11/Applications/Multimedia
-Source0:	http://download.macromedia.com/pub/flashplayer/updaters/9/flash_player_9_linux_dev.tar.gz
-# NoSource0-md5:	903b77cb674df3592dc779137f2cd365
+Source0:	http://download.macromedia.com/pub/flashplayer/updaters/10/flash_player_10_linux_dev.tar.gz
+# NoSource0-md5:	
 URL:		http://www.adobe.com/products/flashplayer/
 # apparently dlopened by player
 Requires:	libasound.so.2
+Requires:	libcurl.so.4
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_sysconfdir	/etc/adobe
 
 %description
-Adobe(R) Flash(R) Player 9 for Linux - the next-generation client
+Adobe(R) Flash(R) Player for Linux - the next-generation client
 runtime for engaging with Flash content and applications on Linux.
 
 %description -l pl.UTF-8
