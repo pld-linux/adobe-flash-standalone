@@ -2,13 +2,12 @@
 Summary:	Standalone Flash player (Projector)
 Summary(pl.UTF-8):	Odtwarzacz Flash
 Name:		adobe-flash-standalone
-Version:	10.3.181.34
+Version:	11.0.1.152
 Release:	%{rel}%{?with_license_agreement:wla}
 License:	Free to use, non-distributable
 Group:		X11/Applications/Multimedia
-Source0:	http://download.macromedia.com/pub/flashplayer/updaters/10/flashplayer_10_sa.tar.gz#/%{name}-%{version}.tgz
-# NoSource0-md5:	a315c5508d049060558b70d5654ff0c3
-NoSource:	0
+Source0:	http://download.macromedia.com/pub/flashplayer/updaters/11/flashplayer_11_sa.i386.tar.gz#/%{name}-%{version}.tgz
+# NoSource0-md5:	4d7c80df0614da4cffd46b77ebfaa466
 URL:		http://www.adobe.com/support/flashplayer/downloads.html
 # apparently dlopened by player
 Requires:	libasound.so.2
